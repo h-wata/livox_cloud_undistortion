@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0.2)
 project(livox_dedistortion_pkg)
 
 SET(CMAKE_BUILD_TYPE "Release")
-set(CMAKE_CXX_FLAGS "-std=c++11")
+set(CMAKE_CXX_FLAGS "-std=c++14")
 
 #SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 SET(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
@@ -11,7 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   roscpp
   std_msgs
-  livox_ros_driver
+  livox_ros_driver2
   eigen_conversions
   pcl_conversions
   pcl_ros
